@@ -4,13 +4,7 @@ This is an extremely simple PHP [statsd](https://github.com/etsy/statsd.git) cli
 
 ## Installation
 
-1.  _With Sparks_ - `$ php tools/spark install statsd`
-2.  _Without Sparks_ - Clone repository at [github.com/seejohnrun/php-statsd](https://github.com/seejohnrun/php-statsd)
-
-## Setup
-
-1.  _With Sparks_ - `$this->load->spark('statsd');`
-2.  _Without Sparks_ - `require './libraries/statsd.php';`
+Use composer...
 
 ## Usage
 
@@ -22,6 +16,10 @@ To count things:
 $stats = new StatsD();
 $stats->counting('numpoints', 123);
 ```
+
+### Guages
+
+
 
 ### Timing
 
