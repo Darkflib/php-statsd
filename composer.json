@@ -25,6 +25,6 @@
         "email": "support@technomonk.com"
     },
     "autoload": {
-        "psr-0": {"PhpStatsD": "libraries/"}
+        "psr-0": {"PhpStatsD": ""}
     }
 }
