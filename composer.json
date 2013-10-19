@@ -1,5 +1,5 @@
 {
-    "name": "Darkflib/php-statsd",
+    "name": "darkflib/php-statsd",
     "description": "Statsd library for PHP",
     "version": "0.0.3",
     "type": "library",
