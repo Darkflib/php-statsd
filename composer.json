@@ -1,0 +1,28 @@
+{
+    "name": "Darkflib/php-statsd
+    "description": "Statsd library for PHP",
+    "version": "0.0.3",
+    "type": "library",
+    "keywords": ["statsd", "monitoring", "logging", "graphite"],
+    "homepage": "https://github.com/Darkflib/php-statsd",
+    "time": "2013-10-19",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mike Preston (darkflib)",
+            "email": "mike@technomonk.com",
+            "homepage": "http://www.mikepreston.org",
+            "role": "Developer"
+        },
+        {
+            "name": "John Crepezzi",
+            "email": "john.crepezzi@gmail.com",
+            "homepage": "http://seejohncode.com/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@technomonk.com",
+    },
+}
+
