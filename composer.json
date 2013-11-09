@@ -1,7 +1,6 @@
 {
     "name": "darkflib/php-statsd",
     "description": "Statsd library for PHP",
-    "version": "0.0.3",
     "type": "library",
     "keywords": ["statsd", "monitoring", "logging", "graphite"],
     "homepage": "https://github.com/Darkflib/php-statsd",
