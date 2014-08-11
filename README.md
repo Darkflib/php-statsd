@@ -19,6 +19,10 @@ $stats->counting('numpoints', 123);
 
 ### Guages
 
+``` php
+$stats = new StatsD();
+$stats->gauge('coffee_left', 3);
+```
 
 
 ### Timing
