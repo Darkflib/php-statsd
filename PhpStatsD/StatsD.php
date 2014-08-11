@@ -8,12 +8,13 @@ namespace PhpStatsD;
 
 class StatsD {
 
-    private $host, $port;
+    private $host, $port, $debug;
 
     // Instantiate a new client
-    public function __construct($host = 'localhost', $port = 8125) {
+    public function __construct($host = 'localhost', $port = 8125, $debug=false) {
         $this->host = $host;
         $this->port = $port;
+	$this->debug = $debug;
     }
 
     // Record timing
@@ -44,21 +45,27 @@ class StatsD {
 
     // Send
     private function send($value, $rate) {
+        if ($this->debug) echo "Sending $value|@$rate to ".$this->host.':'.$this->port."\n";
         $fp = fsockopen('udp://' . $this->host, $this->port, $errno, $errstr);
         // Will show warning if not opened, and return false
         if ($fp) {
             fwrite($fp, "$value|@$rate");
             fclose($fp);
-        }
+        } else {
+            echo "Error sending\n";
+	}
     }
 
     private function send_value($value) {
+	if ($this->debug) echo "Sending $value to ".$this->host.':'.$this->port."\n";
         $fp = fsockopen('udp://' . $this->host, $this->port, $errno, $errstr);
         // Will show warning if not opened, and return false
         if ($fp) {
             fwrite($fp, "$value");
             fclose($fp);
-        }
+        } else {
+	    echo "Error sending\n";
+	}
 
     }
 
