@@ -24,6 +24,6 @@
         "email": "support@technomonk.com"
     },
     "autoload": {
-        "psr-0": {"PhpStatsD": ""}
+        "psr-0": {"DarkFlib\PhpStatsD": ""}
     }
 }
