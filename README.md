@@ -13,14 +13,14 @@ Use composer...
 To count things:
 
 ``` php
-$stats = new StatsD();
+$stats = new PhpStatsD\StatsD();
 $stats->counting('numpoints', 123);
 ```
 
 ### Guages
 
 ``` php
-$stats = new StatsD();
+$stats = new PhpStatsD\StatsD();
 $stats->gauge('coffee_left', 3);
 ```
 
@@ -30,7 +30,7 @@ $stats->gauge('coffee_left', 3);
 Record timings:
 
 ``` php
-$stats = new StatsD();
+$stats = new PhpStatsD\StatsD();
 $stats->timing('timething', 123);
 ```
 
@@ -39,7 +39,7 @@ $stats->timing('timething', 123);
 And a convenience mechanism for timing:
 
 ``` php
-$stats = new StatsD();
+$stats = new PhpStatsD\StatsD();
 $stats->time_this('timething', function() {
     sleep(1);
 });
@@ -50,7 +50,7 @@ $stats->time_this('timething', function() {
 ### Host and Port
 
 ``` php
-$stats = new StatsD('localhost', 7000); // default localhost:8125
+$stats = new PhpStatsD\StatsD('localhost', 7000); // default localhost:8125
 ```
 
 ### Sample Rate
